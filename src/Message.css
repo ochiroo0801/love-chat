@@ -1,0 +1,60 @@
+.message {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  justify-content: space-between;
+  width: fit-content;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.message > p {
+  background: #ccc5b9;
+  font-size: medium;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 10px;
+  max-width: 250px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  transition: transform 0.3s;
+}
+
+.message > small {
+  color: grey;
+  position: absolute;
+  font-size: 8px;
+  bottom: -5px;
+  order: 0;
+  display: none;
+}
+
+.message:hover > small {
+  display: block;
+}
+
+.message__sender {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.message__sender > small {
+  right: 0;
+  order: 1;
+}
+
+.message__sender > .message__photo {
+  order: 1;
+}
+
+.message__photo {
+  order: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.message__sender > p {
+  background: #403d39;
+  color: #fff;
+}
